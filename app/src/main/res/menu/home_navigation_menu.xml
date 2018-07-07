@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item
+        android:id="@+id/home_navigation_status"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="@string/status" />
+    -->
+
+    <item
+        android:id="@+id/home_navigation_new_group"
+        android:icon="@drawable/multipleuserssilhouette"
+        android:title="@string/new_group" />
+
+    <item
+        android:id="@+id/home_navigation_ravenevar"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="@string/ravenevar" />
+
+    <item
+        android:id="@+id/home_navigation_notdecided"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="@string/not_decided" />
+
+    <item
+        android:id="@+id/home_navigation_account_settings"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="@string/account_settings" />
+
+
+    <item
+        android:id="@+id/home_navigation_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+</menu>

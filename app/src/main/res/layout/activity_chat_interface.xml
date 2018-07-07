@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_interface_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dummychatback"
+    tools:context="com.ravensltd.ravens.ChatUI.ChatInterfaceActivity">
+
+    <include
+        android:id="@+id/chat_interface_toolbar"
+        layout="@layout/app_bar_layout_primary"></include>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chat_interface_attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/attach" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chat_interface_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/send" />
+
+    <EditText
+        android:id="@+id/chat_interface_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chat_interface_attach"
+        android:layout_alignTop="@+id/chat_interface_attach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/chat_interface_attach"
+        android:layout_toStartOf="@+id/chat_interface_send"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Start typing.."
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:textSize="20sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chat_interface_swiperefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_interface_attach"
+        android:layout_below="@+id/chat_interface_toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_interface_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/chat_interface_edittext"
+            android:layout_below="@+id/chat_interface_toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+
+<!--
+<android.support.design.widget.AppBarLayout
+        android:id="@+id/chatinterface_actionbar_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/chat_interface_username"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+-->
+
+
+
+
+<!--
+
+
+<LinearLayout
+        android:id="@+id/chat_interface_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_interface_attach"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="98dp"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/camera" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:ems="10"
+            android:hint="Start typing.."
+            android:inputType="textPersonName" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/attach" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/send" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_interface_rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/chat_interface_linear_layout"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/attach" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/camera" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/a1"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:ems="10"
+            android:hint="Start typing.."
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chat_interface_rel1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/send" />
+
+-->

@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "96162385529",
+    "firebase_url": "https://ravens-139c0.firebaseio.com",
+    "project_id": "ravens-139c0",
+    "storage_bucket": "ravens-139c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96162385529:android:7ec45d06016b27fb",
+        "android_client_info": {
+          "package_name": "com.ravensltd.ravens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96162385529-o99ssoooqeacue58rbfta474mj2elqs0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravensltd.ravens",
+            "certificate_hash": "a8d5a1ac9785f43223acc7812fdf8e3f1d6e5941"
+          }
+        },
+        {
+          "client_id": "96162385529-mfpog89ajc901p6esr6a0lkhqqkag7bf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravensltd.ravens",
+            "certificate_hash": "5c3986cab77be62b2d5b01c52d377feb187d82bd"
+          }
+        },
+        {
+          "client_id": "96162385529-rh40bss1au0v861f0bv5egmabeqcqe9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravensltd.ravens",
+            "certificate_hash": "3f38822df3a7cdd80a33704992a20880c0b522a1"
+          }
+        },
+        {
+          "client_id": "96162385529-9a4tvg304gupor98tbd0fuk987uq1p1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQQyM-bqUzbDlbop02fSjmVFEpTvOMgow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96162385529-9a4tvg304gupor98tbd0fuk987uq1p1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

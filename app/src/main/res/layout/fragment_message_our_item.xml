@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_our_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/msg_our_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/message_our_background"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"></TextView>
+
+    <TextView
+        android:id="@+id/msg_our_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/msg_our_item_message"
+        android:layout_below="@+id/msg_our_item_message"
+        android:layout_marginTop="2dp"
+        android:text="Time"
+        android:layout_marginEnd="3dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+
+    <!--
+    <TextView
+                android:id="@+id/fragment_message_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ali/>
+
+    -->

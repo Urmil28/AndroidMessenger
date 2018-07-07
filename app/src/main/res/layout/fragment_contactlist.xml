@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:outlineProvider="paddedBounds">
+    <!--add border to -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/contactphoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/defaultcontact">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/contactname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contactphoto"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/contactphoto"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="Loading Contact Name..."
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contact_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactphoto"
+        android:layout_alignStart="@+id/contactname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Loading Status.."
+        android:textSize="16sp" />
+
+    <View
+        android:layout_below="@+id/contactphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/contactname"
+        android:layout_marginEnd="20dp"/>
+
+
+</RelativeLayout>

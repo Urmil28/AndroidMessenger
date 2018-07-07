@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    card_view:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:id="@+id/storyitem_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storyitem_profilephoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/defaultprofile" />
+
+        <TextView
+            android:id="@+id/storyitem_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/storyitem_profilephoto"
+            android:layout_toStartOf="@+id/story_item_menu"
+            android:text="@string/user_name"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sstoryitem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/storyitem_username"
+            android:layout_below="@+id/storyitem_username"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@+id/storyitem_profilephoto"
+            android:text="time"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/storyitem_storyphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@+id/storyitem_profilephoto"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            card_view:srcCompat="@color/cardview_light_background" />
+
+        <ImageButton
+            android:id="@+id/storyitem_like_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storyitem_storyphoto"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:background="@color/cardview_light_background"
+            card_view:srcCompat="@mipmap/storylikeborder" />
+
+        <ImageButton
+            android:id="@+id/storyitem_like_filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storyitem_storyphoto"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cardview_light_background"
+            card_view:srcCompat="@mipmap/storylikefilled"
+            android:visibility="gone"/>
+
+
+
+
+        <ImageButton
+            android:id="@+id/storyitem_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storyitem_storyphoto"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/storyitem_like_border"
+            android:background="@color/cardview_light_background"
+            card_view:srcCompat="@mipmap/storycomment" />
+
+        <ImageButton
+            android:id="@+id/storyitem_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storyitem_storyphoto"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@color/cardview_light_background"
+            card_view:srcCompat="@mipmap/storydelete" />
+
+        <ImageButton
+            android:id="@+id/story_item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignTop="@+id/storyitem_username"
+            android:background="@color/cardview_light_background"
+            card_view:srcCompat="@mipmap/storymenu" />
+
+        <TextView
+            android:id="@+id/storyitem_likecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/storyitem_like_border"
+            android:layout_toEndOf="@+id/storyitem_profilephoto"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/storyitem_commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/storyitem_likecount"
+            android:layout_toEndOf="@+id/storyitem_comment"
+            android:text="0"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

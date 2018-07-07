@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ravensltd.ravens.home.HomeActivity">
+    <item
+        android:id="@+id/home_action_settings"
+        android:orderInCategory="102"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/home_action_logout"
+        android:orderInCategory="103"
+        android:title="@string/logout"  />
+</menu>
